@@ -1,0 +1,48 @@
+/*div{
+    background: blue;
+    color: greenyellow;
+
+
+
+
+    margin: 10px auto;
+    border-radius: 100px;
+    border :10px solid brown;
+    border-bottom: 11px solid olivedrab;
+    padding: 13px 14px 15px 20px;
+
+}*/
+#container{
+    font-family: AngsanaUPC;
+    font-size: x-large;
+    font-style: italic;
+    border: 10px dashed aqua;
+    background-color: greenyellow;
+    overflow: scroll;
+
+}
+#center1{
+    text-align: center;
+
+    background-color: yellow;
+    margin: auto;
+    border-radius: 100px;
+    width:17%;
+    border: 2px solid blue;
+
+}
+#topleft{
+    /*;
+    height:50%;
+
+    border-radius: 100px;
+    margin: auto;
+    width:30%;
+    display: inline;*/
+    background-color: blue;
+   position: fixed;
+}
+a:hover{ /* used for hovering on a*/
+    background-color: black;
+    color:ivory;
+}
