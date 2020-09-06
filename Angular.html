@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular we gonna rock</title>
+    <script src="jquery.js"> </script>
+    <script src="Script.js"> </script>
+</head>
+<body ng-controller="mycontroller">
+<div style="font-style:italic ">
+{{message}}
+</div>
+<div >
+    <table>
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>lastname</th>
+            <th>gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="employee in employees">
+            <td>{{employee.Firstname}}</td>
+            <td>{{employee.Lastname}}</td>
+            <td>{{employee.gender}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="font-size: 100%;font-style: oblique">
+    <ul>
+        <li ng-repeat="city in cities">
+             {{city.name}}  [{{$index}}]
+            <ul>
+                <li ng-repeat="man in city.villages">
+                    {{man.name}}  [{{$parent.$index}}][{{$index}}]
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

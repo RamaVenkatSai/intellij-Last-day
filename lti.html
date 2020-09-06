@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form of html</title>
+    <h1>Registration form</h1><br><br>
+    <label>First Name:</label>
+    <input type=text" ><br><br>
+    <label>Last Name :</label>
+
+    <input type=submit"><br><br>
+    <label>Gender:</label>
+    <label>Male:</label>
+    <input  type="radio" id="male" name="gender" align="center">
+    <label>Female:</label>
+    <input   type="radio" id="female" name="gender">
+    <label>other:</label>
+    <input type="radio" id="other" name="gender">
+    <input type="text" id="subEmail" onchange="checkFilled();">
+    <style>
+        #subEmail{
+               color:aquamarine;
+            font-style: italic;
+            width: auto;
+            height: 20px;
+
+
+        }
+
+    </style>
+    <script>
+        function checkFilled() {
+            var inputVal = document.getElementById("subEmail");
+            if (inputVal.value == "") {
+                inputVal.style.backgroundColor  = "white";
+
+            }
+            else{
+                inputVal.style.backgroundColor = inputVal.value;
+                color=inputVal.value;
+
+            }
+        }
+
+        checkFilled();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

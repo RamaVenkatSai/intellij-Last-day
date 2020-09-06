@@ -1,0 +1,33 @@
+table,th,td{
+
+    border: 5px solid green;
+    padding: 20px ;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 150%;
+    color: brown;
+    text-align: center;
+    border-radius: 10px;
+
+}
+/*table{
+    border-collapse: collapse;
+}
+
+ */
+
+input{
+    padding: 5px 10px;
+    border: 1px solid green;
+    border-radius: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: red;
+    opacity: 0%;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+</html>
+<body>
+<div class="form">
+    <h1>Login</h1>
+    <div class="err-msg"></div>
+    <form id="myForm" method="POST" action="/">
+        <div>
+            <label for="UserName">Username</label>
+            <input autocomplete="off" type="text" name="UserName" class="UserName" required />
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input autocomplete="off" type="password" name="Password" class="Password" required/>
+        </div>
+        <div style="align-self: center;">
+					<span>
+						<input type="checkbox" name="RememberMe" id="checkbox" />
+						<label for="RememberMe">Remember Me</label>
+					</span>
+        </div>
+        <input type="submit" id="btn" value="Login" />
+    </form>
+</div>
+<script src="./index1234.js"></script>
+</body>

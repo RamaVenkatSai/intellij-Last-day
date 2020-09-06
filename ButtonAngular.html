@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mymodule">
+<head>
+    <link rel="stylesheet" type="text/css" href="ButtonAngular.css">
+    <meta charset="UTF-8">
+    <title>Button angular</title>
+    <script src="jquery.js"> </script>
+    <script src="ButtonAngular.js"> </script>
+
+</head>
+<body ng-controller="mycontroller">
+<table>
+    <tr>
+        <td ng-click="incrementlikes('c')"> Technology  </td>
+        <td> Likes </td>
+        <td> Dislikes</td>
+        <td> Likes/Dislikes </td>
+    </tr>
+    <tbody>
+    <tr ng-repeat="technology in technologies|orderBy:'-likes'">
+        <td>{{technology.name}}</td>
+        <td>{{technology.likes}}</td>
+        <td>{{technology.dislikes}}</td>
+        <td><input type="button" ng-click="incrementlikes(technology)" value="Likes"/>
+            <input type="button" ng-click="incrementdislikes(technology)" value="DisLikes"/>
+        </td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
